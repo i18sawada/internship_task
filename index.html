@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>p5.jsの紹介</title>
+    <meta name="description" content="ゲーム">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script type="text/javascript" src="./javaScript/Lines.js"></script>
+    <script type="text/javascript" src="./javaScript/RandomShapes.js"></script>
+    <script type="text/javascript" src="./javaScript/Gathering.js"></script>
+    <script type="text/javascript" src="./javaScript/Caterpillar.js"></script>
+  </head>
+
+  <body>
+    <div class="bigContainer">
+      <div class="bigItem13">
+      </div>
+      <div class="bigItem2">
+        <main>
+          <h1>p5.jsの作品の紹介</h1>
+          <p>このページでは、自分がp5.jsで作成した作品をその種類毎に紹介しようと思います。ここで紹介した作品を実際に実行できるよう、紹介の後に実行のスペースを用意しています。</p>
+        </main>
+
+        <h2>1.作品の紹介</h2>
+        <hr>
+
+        <p>作品名を押すとそれぞれの実行スペースに行きます.画像は実行例です.</p>
+
+        <h3>時間と共に描画が変わる</h3>
+        <div class="container1_1">
+          <div class="item11_1">
+            <a href="#line"><h4>カラフルな線を引く</h4></a>
+            <img src="./images/lines.png" alt="カラフルな線を描く" width="200" height="200">
+          </div>
+          <div class="item11_2">
+            <a href="#shapes"><h4>ランダムに図形を表示する</h4></a>
+            <img src="./images/randomShapes.png" alt="ランダムに図形を表示する" width="200" height="200">
+          </div>
+        </div>
+
+        <h3>マウスからの情報で動きが変わる</h3>
+        <div class="container1_1">
+          <div class="item11_1">
+            <a href="#gathering"><h4>集合！！</h4></a>
+            <img src="./images/gathering.png" alt="集合" width="200" height="200">
+          </div>
+          <div class="item11_2">
+            <a href="#caterpillar"><h4>アオムシと鬼ごっこ</h4></a>
+            <img src="./images/caterpillar.png" alt="アオムシと鬼ごっこ" width="200" height="200">
+          </div>
+        </div>
+
+        <h2>2.実行スペース</h2>
+        <hr>
+
+        <div class="container2_1">
+          <div class="item21_1">
+            <a id="line"><h4>カラフルな線を引く</h4></a>
+            <p>右側のキャンバス内(薄い灰色の中)をクリックすると動き出します.壁に反射する線を引き、反射する時にランダムに色が変わります.実行を止めるときは画面外をクリックしてください.</p>
+          </div>
+          <div id="canvasLine"></div>
+        </div>
+
+        <div class="container2_2">
+          <div class="item22_1">
+            <a id="shapes"><h4>ランダムに図形を表示する</h4></a>
+            <p>右側のキャンバス内(薄い灰色の中)をクリックすると動き出します.</p>
+            <p>ランダムに図形の種類、サイズ、色、場所を決め、表示させます.</p>
+            <p>終了するときは画面外をクリックしてください.</p>
+          </div>
+          <div id="canvasShapes"></div>
+        </div>
+
+        <div class="container2_3">
+          <div class="item23_1">
+            <a id="gathering"><h4>集合！！</h4></a>
+            <p>画面内をクリックすると、5 ~ 12個の円をサイズ、場所をランダムに表示させ、ゴールフラッグが登場します.そして、全ての円がそこに向かっていきます.終了するときは画面外をクリックしてください.</p>
+          </div>
+          <div id="canvasGather"></div>
+        </div>
+
+        <div class="container2_4">
+          <div class="item24_1">
+            <a id="caterpillar"><h4>アオムシと鬼ごっこ</h4></a>
+            <p>中央にアオムシがいます.アオムシはキャンバス内にいるマウスに向かって動きます.</p>
+          </div>
+          <div id="canvasCatapi"></div>
+        </div>
+      </div>
+      <div class="bigItem13">
+      </div>
+    </div>
+  </body>
+</html>
